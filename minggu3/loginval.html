@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Login</title>
+</head>
+<body>
+    <fieldset style="width: 350px;">
+        <h1><u> Form Login</u></h1>
+        <form action="" method="post" >
+            <fieldset style="width: 50px;">
+                    <legend>Masukan akun anda di sini
+                    </legend>
+                    <table>
+                        <tr>
+                            <td><b>Username:</b></td>
+                            <td><input type="text" name = "txtuser" maxlength="8" title="max 8 karakter"></td>
+                    </tr>
+                    </tr>
+                    
+                    <tr>
+                        <td><label><b>Password:</b></label></td>
+                        <td><input type="password" name = "txtuser" 
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="minimal 8 karakter, terdiri min 1 huruf besar/1 huruf kecil/ 1 angka" 
+                            placeholder="Ex: AaBbCc12345"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="btnsubmit" value="Login">
+                        </td>
+                        <td>
+                            <a href="forgotten.html">Forgot username/password</a>  
+                        </td>
+                    </tr>
+                    </table>
+            </fieldset>
+        </form>
+    </fieldset>
+</body>
+</html>
