@@ -1,0 +1,101 @@
+header{
+    position: relative;
+    width: 1024px;
+    height: 180px;
+    border: 1px solid black;
+    background-color: rgba(45, 35, 99,0.85);
+    padding-bottom: 20px;
+}
+article{
+    width: 750px;
+    height: auto; 
+    border: 1px solid black;
+}
+nav{
+    float: right;
+    width: 272px;
+    height: auto;
+    border: 1px solid black;
+}
+footer{
+    padding-bottom: 20px;
+    border: 1px solid black;
+    width: 1024px;
+    height: 70px;
+    background-color: rgba(45, 35, 99,0.85);
+}
+
+/* Header */
+.top-container{
+    display: flex;
+}
+.logo{
+    float: left;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.logo img{
+    width: 70%;
+}
+header h1{
+    color: white;
+    padding-top: 25px;; 
+    font-family: 'Times New Roman';
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+}
+header a{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.top-container{
+    display: flex;
+}
+.link-login{
+    text-align: right;
+    padding-right: 50px;
+}
+
+/*Article */
+.middle-wrapper{
+    display: flex;
+}
+.top h1{
+    text-align: center;
+    font-size: 24px;
+}
+.bottom{
+    margin-left: 80px ;
+    margin-bottom: 30px;
+    width: 85%;
+    height: 200px; 
+    display: inline-flex;
+}
+.biodata li{
+    padding-right: 45px;
+    padding-bottom: 15px;
+    font-size: 19px;
+    list-style-type: none;
+}
+
+/* nav */
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid black;
+}
+
+/* Footer */
+footer p{    
+    font-family: 'Times New Roman';
+    font-size: 28px;
+    text-align: center;
+    color: white;
+}
+
