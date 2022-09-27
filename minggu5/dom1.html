@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <title>Form Input</title>
+</head>
+<body>
+    <form class="w-25 p-4 rounded" style="border: 1px solid black;"  action="" method="get">
+                <table>
+                    <tr>
+                        <td><label>Masukkan Nama Anda: </label></td>
+                        <td><input class="rounded mx-2" type="text" placeholder="Username" id="userInput"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <input class="my-2 mx-2 btn btn-primary" type="button" value="Insert" id="btnInsert"></input>
+                        </td>
+                    </tr>
+                </table>             
+                <p id="username"> Nama saya adalah</p>
+                <input class="btn btn-primary" type="button" value="Ganti Warna" id="btnGantiWarna" onclick="colorFunction()" >
+    </form>
+    <script>
+        let username;
+        document.getElementById("btnInsert").onclick = function(){
+            username = document.getElementById("userInput").value;
+            document.getElementById("username").innerHTML = "Nama saya adalah " + username;
+        }
+        function colorFunction(){
+            document.getElementById("username").classList.toggle("text-primary");
+        }
+    </script>
+</body>
+</html> 

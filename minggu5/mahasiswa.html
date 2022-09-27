@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data Mahasiswa</title>
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <!-- eksternal js -->
+    <script src="/minggu5/skripKu.js"></script>
+</head>
+<body>
+    <form autocomplete="off" class="w-25 p-4 rounded m-auto my-5" style="border: 1px solid black;"  action="" method="get">
+        <h3 class="text-center">Form Data Mahasiswa</h3>
+        <div class="pb-4">
+            <label for="nama">Nama</label>
+            <input class="form-control" type="text" id="nama">
+        </div>
+        <div class="pb-4">
+            <label for="tempatLahir">Tempat Lahir</label>
+            <input class="form-control" type="text" id="tempatLahir">
+        </div>
+        <div class="pb-4">
+            <label for="tanggalLahir">Tanggal Lahir</label>
+            <input class="form-control" type="date" id="tanggalLahir">
+        </div>
+        <div class="pb-4">
+            <label for="jenisKelamin">Jenis Kelamin</label>
+            <input class="form-control" type="text" list="datalistOption" id="jenisKelamin" placeholder="Pilih Salah Satu">
+            <datalist id="datalistOption">
+                <option value="Laki-laki">
+                <option value="Perempuan">
+            </datalist>
+        </div>
+        <div class="pb-2">
+            <label for="pendidikanTerakhir">Pendidikan Terakhir</label>
+
+            <input class="form-control dropdown" type="text" list="dataListOption2" id="pendidikanTerakhir" placeholder="Pilih Salah Satu">
+             <datalist id="dataListOption2">
+                <option value="SD"></option>
+                <option value="SMP"></option>
+                <option value="SMA"></option>
+                <option value="S1"></option>
+                <option value="S2"></option>
+                <option value="S3"></option>
+                <option value="Lainnya"></option>
+            </datalist> 
+        </div>
+        <input class="btn btn-primary px-4 my-2" type="button" value="Submit" id="btnSubmit" onclick="myFunction()">
+    </form>
+    <div id="deskripsi" class="container w-25 mx-auto my-5 py-4 d-flex border border-dark rounded-5" style="visibility: hidden;" >
+        <div class="px-5">
+            <p>Nama Saya</p>
+            <p>Tempat Lahir</p>
+            <p>Tanggal Lahir</p>
+            <p>Jenis Kelamin</p>
+            <p>Pendidikan Terakhir</p>
+        </div>
+        <div class="px-2">
+            <p>:</p>
+            <p>:</p>
+            <p>:</p>
+            <p>:</p>
+            <p>:</p>
+        </div>
+        <div>
+            <p id="usernameOutput"></p>
+            <p id="tempatLahirOutput"></p>
+            <p id="tanggalLahirOutput"></p>
+            <p id="jenisKelaminOutput"></p>
+            <p id="pendidikanTerakhirOutput"></p>
+        </div> 
+    </div>
+
+</body>
+</html>
