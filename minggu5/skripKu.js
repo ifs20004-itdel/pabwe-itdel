@@ -20,6 +20,7 @@ function myFunction(){
         document.getElementById("jenisKelamin").value = "";
         document.getElementById("pendidikanTerakhirOutput").innerHTML = pendikTerakhir;
         document.getElementById("pendidikanTerakhir").value = "";
+
         visible.style.visibility="visible";
     }   
 }
